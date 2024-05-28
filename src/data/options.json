@@ -1,0 +1,154 @@
+{
+    "social": [
+        {
+            "id": "icon-facebook",
+            "iconClass": "fa-brands fa-facebook",
+            "requiredSession": false,
+            "linkTo": "#"
+        },
+        {
+            "id": "icon-intagram",
+            "iconClass": "fa-brands fa-instagram",
+            "requiredSession": false,
+            "linkTo": "#"
+        },
+        {
+            "id": "icon-start-session",
+            "iconClass": "fa-solid fa-circle-user",
+            "requiredSession": false,
+            "linkTo": "#",
+            "callBack": "startSession"
+        },
+        {
+            "id": "icon-cart-shopping",
+            "iconClass": "fa-solid fa-cart-shopping",
+            "requiredSession": true,
+            "linkTo": "cart.html"
+        },
+        {
+            "id": "icon-favorites",
+            "iconClass": "fa-solid fa-star",
+            "requiredSession": true,
+            "linkTo": "favorites.html"
+        },
+        {
+            "id": "icon-user-check",
+            "iconClass": "fa-solid fa-user-check",
+            "requiredSession": true,
+            "linkTo": "#",
+            "callBack": "closeSession"
+        }
+    ],
+    "nav": [
+        {
+            "title": "Ofertas",
+            "linkTo": "#"
+        },
+        {
+            "title": "Como comprar",
+            "linkTo": "#"
+        },
+        {
+            "title": "Costos y tarifas",
+            "linkTo": "#"
+        },
+        {
+            "title": "Mis productos",
+            "linkTo": "#"
+        },
+        {
+            "title": "Garantia",
+            "linkTo": "#"
+        }
+    ],
+    "footer": {
+        "text": "Curso React + Vite + TS 2024",
+        "options":[
+            [
+                {
+                    "title": "Ofertas de la semana",
+                    "isPrincipal": true,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Laptop",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Audio",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Auriculares",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                }
+            ],
+            [
+                {
+                    "title": "Cómo comprar",
+                    "isPrincipal": true,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Formas de pago",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Envios",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Devoluciones",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                }
+            ],
+            [
+                {
+                    "title": "Costos y tarifas",
+                    "isPrincipal": true,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Impuestos",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Facturación",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                }
+            ],
+            [
+                {
+                    "title": "Mis pedidos",
+                    "isPrincipal": true,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Pedir nuevamente",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                },
+                {
+                    "title": "Lista de deseos",
+                    "isPrincipal": false,
+                    "linkTo": "#"
+                }
+            ],
+            [
+                {
+                    "title": "Garantía de Entrega",
+                    "isPrincipal": true,
+                    "linkTo": "#"
+                }
+            ]
+        ]
+    }
+}

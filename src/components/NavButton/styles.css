@@ -1,0 +1,10 @@
+li.nav-link a {
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+}
+
+li.nav-link a:hover {
+    text-decoration: underline;
+}
