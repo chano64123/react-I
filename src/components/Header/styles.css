@@ -29,20 +29,3 @@ header {
     font-size: 18px;
     outline: none;
 }
-
-.search .social ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.search .social ul li {
-    padding: 0 10px;
-}
-
-.search .social ul li a i {
-    color: white;
-    font-size: 1.5rem;
-}

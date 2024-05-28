@@ -1,5 +1,5 @@
 import './styles.css'
-import data from '../../data/options.json'
+import data from '@/data/options.json'
 import FooterOption from '../FooterOption';
 
 const Footer = () => {

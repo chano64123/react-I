@@ -1,5 +1,5 @@
 import './styles.css'
-import data from '../../data/products.json'
+import data from '@/data/products.json'
 import ProductCard from '../ProductCard';
 
 const ProductList = () => {

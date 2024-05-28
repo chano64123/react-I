@@ -1,5 +1,6 @@
 import logo from '../../../public/images/logo/tiendamia-logo.svg'
 import NavBar from '../NavBar';
+import Social from '../Social';
 import './styles.css'
 
 const Header = () => {
@@ -17,9 +18,7 @@ const Header = () => {
                             <input id="inputSearch" type="text" placeholder="Search" />
                         </form>
                     </div>
-                    <div className="social">
-                        <ul id="social"></ul>
-                    </div>
+                    <Social/>
                 </div>
                 <NavBar />
             </div>
