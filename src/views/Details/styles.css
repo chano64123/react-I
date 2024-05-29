@@ -1,0 +1,24 @@
+main {
+    height: auto;
+}
+
+.product-images-block {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    max-width: 100%;
+    overflow: hidden;
+    grid-template-rows: 45px 45px 45px;
+    gap: 5px;
+}
+
+.product-images-block,
+.product-description-block,
+.product-checkout-block {
+    flex: 1;
+}
+
+.recommended-product-label {
+    color: #ff3b3c;
+    font-weight: bold;
+    font-size: 30px;
+}

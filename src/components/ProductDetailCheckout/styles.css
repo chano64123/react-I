@@ -1,0 +1,73 @@
+.checkout-container {
+    background-color: #ebebeb;
+    padding: 33px;
+    border-radius: 4px;
+}
+
+.checkout-total-label {
+    color: #ff3b3c;
+}
+
+.checkout-total-price {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.checkout-description {
+    line-height: 20.4px;
+    word-wrap: break-word;
+}
+
+.checkout-policy-list {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.checkout-policy-list li {
+    display: flex;
+    margin: 15px 0;
+}
+
+.checkout-policy-list li .policy-icon {
+    margin-right: 15px;
+}
+
+.checkout-process .top {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.checkout-process .top input {
+    height: 40px;
+    width: 62px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    padding: 0 10px 0 20px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 40px;
+    background: #ff3b3c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-outline {
+    width: 100%;
+    height: 40px;
+    color: #ff3b3c;
+    font-weight: bold;
+    border: 1px solid #ff3b3c;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

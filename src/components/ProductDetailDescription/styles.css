@@ -1,0 +1,64 @@
+.product-description-block .title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    word-wrap: break-word;
+}
+
+.product-description-block .selector {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.product-description-block .selector .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos del campo de selección */
+#color {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para cuando el campo de selección está enfocado */
+#color:focus {
+    border-color: #eee;
+    box-shadow: 0 0 5px rgba(118, 119, 120, 0.5);
+}
+
+/* Estilos para las opciones del select */
+option {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Estilos para cuando el cursor está sobre las opciones del select */
+option:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estilos del fieldset */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    font-family: Arial, sans-serif; /* Cambia la fuente según tu preferencia */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.5; /* Espacio entre líneas */
+    color: #333; /* Color del texto */
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 15px; /* Añade espaciado interno */
+    border-radius: 5px; /* Redondea los bordes */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    margin-bottom: 20px; /* Espacio entre cada descripción */
+}
