@@ -6,7 +6,7 @@ import ProductList from "@/components/ProductList"
 const Home = () => {
   return (
     <>
-      <Header />
+      <Header showFilter={true} />
       <Hero first={"Tecnología"} second={"Renovada"} />
       <ProductList />
       <Footer />

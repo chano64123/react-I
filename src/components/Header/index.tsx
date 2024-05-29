@@ -4,7 +4,7 @@ import logo from '../../../public/images/logo/tiendamia-logo.svg'
 import NavBar from '../NavBar';
 import Social from '../Social';
 
-const Header = () => {
+const Header = ({ showFilter = false }) => {
     return (
         <header>
             <div className="container">
@@ -14,12 +14,15 @@ const Header = () => {
                             <img src={logo} width="218" alt="Logo tiendamia" />
                         </Link>
                     </div>
-                    <div className="form">
-                        <form action="">
-                            <input id="inputSearch" type="text" placeholder="Search" />
-                        </form>
-                    </div>
-                    <Social/>
+                    {
+                        showFilter &&
+                            <div className="form">
+                                <form action="">
+                                    <input id="inputSearch" type="text" placeholder="Search" />
+                                </form>
+                            </div>
+                    }
+                    <Social />
                 </div>
                 <NavBar />
             </div>
