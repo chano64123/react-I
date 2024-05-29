@@ -23,13 +23,13 @@
             "id": "icon-cart-shopping",
             "iconClass": "fa-solid fa-cart-shopping",
             "requiredSession": true,
-            "linkTo": "cart.html"
+            "linkTo": "cart"
         },
         {
             "id": "icon-favorites",
             "iconClass": "fa-solid fa-star",
             "requiredSession": true,
-            "linkTo": "favorites.html"
+            "linkTo": "favorites"
         },
         {
             "id": "icon-user-check",
