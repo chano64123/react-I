@@ -1,7 +1,7 @@
-import Hero from '../Hero'
-import Footer from '../Footer'
-import Header from '../Header'
-import ProductList from '../ProductList'
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import Hero from "@/components/Hero"
+import ProductList from "@/components/ProductList"
 
 const Home = () => {
   return (

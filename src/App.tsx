@@ -1,4 +1,4 @@
-import Home from './components/Home'
+import Home from './views/Home'
 import './App.css'
 
 const App = () => {
