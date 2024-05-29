@@ -1,5 +1,5 @@
-import NavButton from '../NavButton';
 import './styles.css'
+import NavButton from '../NavButton';
 import data from '@/data/options.json'
 
 const NavBar = () => {
