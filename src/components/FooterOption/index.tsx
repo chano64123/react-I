@@ -1,4 +1,5 @@
 import './styles.css'
+import { Link } from 'react-router-dom';
 
 const FooterOption = ({ options }) => {
     return (
@@ -7,7 +8,7 @@ const FooterOption = ({ options }) => {
                 {
                     options.map(({ title, isPrincipal, linkTo }) => (
                         <li className={isPrincipal ? "col-main-item" : ""}>
-                            <a href={linkTo}>{title}</a>
+                            <Link to={linkTo}>{title}</Link>
                         </li>
                     ))
                 }

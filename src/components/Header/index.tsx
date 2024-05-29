@@ -1,7 +1,8 @@
+import './styles.css'
+import { Link } from 'react-router-dom';
 import logo from '../../../public/images/logo/tiendamia-logo.svg'
 import NavBar from '../NavBar';
 import Social from '../Social';
-import './styles.css'
 
 const Header = () => {
     return (
@@ -9,9 +10,9 @@ const Header = () => {
             <div className="container">
                 <div className="search">
                     <div className="logo">
-                        <a href="index.html">
+                        <Link to="/">
                             <img src={logo} width="218" alt="Logo tiendamia" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="form">
                         <form action="">

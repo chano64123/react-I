@@ -1,9 +1,10 @@
 import './styles.css'
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
     return (
         <article className="product-card">
-            <a className="product-link" href={`details.html?id=${product.id}`}>
+            <Link className="product-link" to={`details/${product.id}`}>
                 <img className="product-img" src={product.images[0]} alt={product.title} />
                 <div className="product-info">
                     <span className="product-title">{product.title}</span>
@@ -14,7 +15,7 @@ const ProductCard = ({product}) => {
                     </div>
                     <div className="product-tax-policy">{product.observation}</div>
                 </div>
-            </a>
+            </Link>
         </article>
     );
 }

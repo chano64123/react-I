@@ -1,4 +1,5 @@
 import './styles.css'
+import { Link } from 'react-router-dom';
 import data from '@/data/options.json'
 
 const Social = () => {
@@ -8,7 +9,7 @@ const Social = () => {
                 {
                     data.social.map(({ iconClass, linkTo }) => (
                         <li>
-                            <a href={linkTo}><i className={iconClass}></i></a>
+                            <Link to={linkTo}><i className={iconClass}></i></Link>
                         </li>
                     ))
                 }
