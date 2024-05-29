@@ -3,7 +3,6 @@ section {
 }
 
 #hero {
-    border: 1px solid purple;
     height: 340px;
     background: url("../../../public/images/banner/hero_bg.png");
     background-size: cover;
