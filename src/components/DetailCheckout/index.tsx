@@ -1,6 +1,6 @@
 import './styles.css'
-import plane from '../../../public/images/icon/plane.png'
-import truck from '../../../public/images/icon/truck.png'
+import plane from '/public/images/icon/plane.png'
+import truck from '/public/images/icon/truck.png'
 
 
 const DetailCheckout = ({ product }) => {

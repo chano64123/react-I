@@ -1,6 +1,6 @@
 import './styles.css'
 import { Link } from 'react-router-dom';
-import logo from '../../../public/images/logo/tiendamia-logo.svg'
+import logo from '/public/images/logo/tiendamia-logo.svg'
 import NavBar from '../NavBar';
 import Social from '../Social';
 

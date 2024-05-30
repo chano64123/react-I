@@ -4,7 +4,7 @@ section {
 
 #hero {
     height: 340px;
-    background: url("../../../public/images/banner/hero_bg.png");
+    background: url("/public/images/banner/hero_bg.png");
     background-size: cover;
     background-position: top center;
 }
