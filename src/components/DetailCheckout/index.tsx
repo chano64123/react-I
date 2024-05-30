@@ -3,7 +3,7 @@ import plane from '../../../public/images/icon/plane.png'
 import truck from '../../../public/images/icon/truck.png'
 
 
-const ProductDetailCheckout = ({ product }) => {
+const DetailCheckout = ({ product }) => {
     return (
         <div className="checkout-container">
             <span className="checkout-total-label">Total:</span>
@@ -32,4 +32,4 @@ const ProductDetailCheckout = ({ product }) => {
     );
 }
 
-export default ProductDetailCheckout
+export default DetailCheckout

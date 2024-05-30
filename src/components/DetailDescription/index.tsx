@@ -1,6 +1,6 @@
 import './styles.css'
 
-const ProductDetailDescription = ({product}) => {
+const DetailDescription = ({product}) => {
     return (
         <>
             <h1 className="title">{product.title}</h1>
@@ -19,4 +19,4 @@ const ProductDetailDescription = ({product}) => {
     );
 }
 
-export default ProductDetailDescription
+export default DetailDescription

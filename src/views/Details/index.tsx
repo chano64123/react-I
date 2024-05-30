@@ -2,9 +2,9 @@ import './styles.css'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ProductList from '@/components/ProductList';
-import ProductDetailImage from '@/components/ProductDetailImage';
-import ProductDetailDescription from '@/components/ProductDetailDescription';
-import ProductDetailCheckout from '@/components/ProductDetailCheckout';
+import DetailThumbs from '@/components/DetailThumbs';
+import DetailDescription from '@/components/DetailDescription';
+import DetailCheckout from '@/components/DetailCheckout';
 import Hero from '@/components/Hero';
 import data from '@/data/products.json'
 import { useParams } from 'react-router-dom';
@@ -21,13 +21,13 @@ const Details = () => {
                         <div className="container">
                             <div className="columns-container">
                                 <div className="product-images-block" id="product-images">
-                                    <ProductDetailImage product={product} />
+                                    <DetailThumbs product={product} />
                                 </div>
                                 <div className="product-description-block" id="product-description">
-                                    <ProductDetailDescription product={product} />
+                                    <DetailDescription product={product} />
                                 </div>
                                 <div className="product-checkout-block" id="product-checkout">
-                                    <ProductDetailCheckout product={product} />
+                                    <DetailCheckout product={product} />
                                 </div>
                             </div>
                             <div className="sales-block">
@@ -40,7 +40,6 @@ const Details = () => {
                             </div>
                         </div>
                     </main>
-
             }
             <Footer />
         </>

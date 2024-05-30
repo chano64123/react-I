@@ -1,6 +1,6 @@
 import './styles.css'
 
-const ProductDetailImage = ({ product }) => {
+const DetailThumbs = ({ product }) => {
     return (
         <>
             {
@@ -14,4 +14,4 @@ const ProductDetailImage = ({ product }) => {
     );
 }
 
-export default ProductDetailImage
+export default DetailThumbs
