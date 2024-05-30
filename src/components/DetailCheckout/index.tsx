@@ -1,13 +1,13 @@
 import './styles.css'
 import plane from '/public/images/icon/plane.png'
 import truck from '/public/images/icon/truck.png'
-
+import { optionsLocaleString } from '@/config/appConfig'
 
 const DetailCheckout = ({ product }) => {
     return (
         <div className="checkout-container">
             <span className="checkout-total-label">Total:</span>
-            <h2 className="checkout-total-price">S/<span id="checkout-total-price">{product.price.toFixed(2)}</span></h2>
+            <h2 className="checkout-total-price">S/<span id="checkout-total-price">{product.price.toLocaleString('es-PE', optionsLocaleString)}</span></h2>
             <p className="checkout-description">Incluye impuestos, pero si quieres los evadimos por ti.</p>
             <ul className="checkout-policy-list">
                 <li>

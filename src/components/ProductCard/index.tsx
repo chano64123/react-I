@@ -1,4 +1,5 @@
 import './styles.css'
+import { optionsLocaleString } from '@/config/appConfig';
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
@@ -10,7 +11,7 @@ const ProductCard = ({product}) => {
                     <span className="product-title">{product.title}</span>
                     <span className="product-description">{product.description}</span>
                     <div className="product-price-block">
-                        <span className="price">S/{product.price.toFixed(2)}</span>
+                        <span className="price">S/{product.price.toLocaleString('es-PE', optionsLocaleString)}</span>
                         <span className="discount">{product.discount}% Off</span>
                     </div>
                     <div className="product-tax-policy">{product.observation}</div>

@@ -1,4 +1,5 @@
 import './styles.css'
+import { optionsLocaleString } from '@/config/appConfig';
 
 const CartProduct = ({ product, isFavorite }) => {
     const classFavorite = isFavorite ? 'fa-solid' : 'fa-regular';
@@ -11,7 +12,7 @@ const CartProduct = ({ product, isFavorite }) => {
                 <span className="cart-product-description">{product.description}</span>
                 <input id={product.id} data-color={product.color} type="number" min="1" max="10" value={product.quantity} className="cart-product-quantity" />
             </div>
-            <div className="cart-product-price">S/{product.price.toFixed(2)}</div>
+            <div className="cart-product-price">S/{product.price.toLocaleString('es-PE', optionsLocaleString)}</div>
             <div className="cart-product-favorite">
                 <i className={`${classFavorite} fa-star cart-product-favorite-icon`} data-id={product.id} data-color={product.color}></i>
             </div>
