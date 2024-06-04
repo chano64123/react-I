@@ -9,7 +9,7 @@ const DetailDescription = ({product}) => {
                     <label className="label" htmlFor="color">Color</label>
                     <select id="color">
                         {
-                            product.colors.map(color => (<option value={color}>{color}</option>))
+                            product.colors.map((color, index)=> (<option key={index} value={color}>{color}</option>))
                         }
                     </select>
                 </fieldset>

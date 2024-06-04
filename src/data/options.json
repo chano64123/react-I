@@ -41,22 +41,27 @@
     ],
     "nav": [
         {
+            "id": 1,
             "title": "Ofertas",
             "linkTo": "#"
         },
         {
+            "id": 2,
             "title": "Como comprar",
             "linkTo": "#"
         },
         {
+            "id": 3,
             "title": "Costos y tarifas",
             "linkTo": "#"
         },
         {
+            "id": 4,
             "title": "Mis productos",
             "linkTo": "#"
         },
         {
+            "id": 5,
             "title": "Garantia",
             "linkTo": "#"
         }
@@ -66,21 +71,25 @@
         "options":[
             [
                 {
+                    "id": 1,
                     "title": "Ofertas de la semana",
                     "isPrincipal": true,
                     "linkTo": "#"
                 },
                 {
+                    "id": 2,
                     "title": "Laptop",
                     "isPrincipal": false,
                     "linkTo": "#"
                 },
                 {
+                    "id": 3,
                     "title": "Audio",
                     "isPrincipal": false,
                     "linkTo": "#"
                 },
                 {
+                    "id": 4,
                     "title": "Auriculares",
                     "isPrincipal": false,
                     "linkTo": "#"
@@ -88,21 +97,25 @@
             ],
             [
                 {
+                    "id": 1,
                     "title": "Cómo comprar",
                     "isPrincipal": true,
                     "linkTo": "#"
                 },
                 {
+                    "id": 2,
                     "title": "Formas de pago",
                     "isPrincipal": false,
                     "linkTo": "#"
                 },
                 {
+                    "id": 3,
                     "title": "Envios",
                     "isPrincipal": false,
                     "linkTo": "#"
                 },
                 {
+                    "id": 4,
                     "title": "Devoluciones",
                     "isPrincipal": false,
                     "linkTo": "#"
@@ -110,16 +123,19 @@
             ],
             [
                 {
+                    "id": 1,
                     "title": "Costos y tarifas",
                     "isPrincipal": true,
                     "linkTo": "#"
                 },
                 {
+                    "id": 2,
                     "title": "Impuestos",
                     "isPrincipal": false,
                     "linkTo": "#"
                 },
                 {
+                    "id": 3,
                     "title": "Facturación",
                     "isPrincipal": false,
                     "linkTo": "#"
@@ -127,16 +143,19 @@
             ],
             [
                 {
+                    "id": 1,
                     "title": "Mis pedidos",
                     "isPrincipal": true,
                     "linkTo": "#"
                 },
                 {
+                    "id": 2,
                     "title": "Pedir nuevamente",
                     "isPrincipal": false,
                     "linkTo": "#"
                 },
                 {
+                    "id": 3,
                     "title": "Lista de deseos",
                     "isPrincipal": false,
                     "linkTo": "#"
@@ -144,6 +163,7 @@
             ],
             [
                 {
+                    "id": 1,
                     "title": "Garantía de Entrega",
                     "isPrincipal": true,
                     "linkTo": "#"

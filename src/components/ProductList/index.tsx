@@ -9,7 +9,7 @@ const ProductList = ({first = 0}) => {
             <div className="container">
                 <div className="product-container" id="products">
                     {
-                        products.map(product => <ProductCard product={product}/>)
+                        products.map(product => <ProductCard key={product.id} product={product}/>)
                     }
                 </div>
             </div>

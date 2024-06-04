@@ -7,8 +7,8 @@ const Social = () => {
         <div className="social">
             <ul id="social">
                 {
-                    data.social.map(({ iconClass, linkTo }) => (
-                        <li>
+                    data.social.map(({id, iconClass, linkTo }) => (
+                        <li key={id}>
                             <Link to={linkTo}><i className={iconClass}></i></Link>
                         </li>
                     ))

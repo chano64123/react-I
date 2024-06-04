@@ -6,8 +6,8 @@ const FooterOption = ({ options }) => {
         <div className="col">
             <ul>
                 {
-                    options.map(({ title, isPrincipal, linkTo }) => (
-                        <li className={isPrincipal ? "col-main-item" : ""}>
+                    options.map(({ id, title, isPrincipal, linkTo }) => (
+                        <li key={id} className={isPrincipal ? "col-main-item" : ""}>
                             <Link to={linkTo}>{title}</Link>
                         </li>
                     ))

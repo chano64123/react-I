@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div className="columns-container" id="footer">
                     {
-                        data.footer.options.map(option => <FooterOption options={option}/>)
+                        data.footer.options.map((option, index) => <FooterOption key={index} options={option}/>)
                     }
                 </div>
                 <div className="copyright">{data.footer.text}</div>

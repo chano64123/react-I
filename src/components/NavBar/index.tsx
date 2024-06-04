@@ -7,7 +7,7 @@ const NavBar = () => {
         <div className="nav">
             <ul id="nav">
                 {
-                    data.nav.map(({linkTo, title}) => <NavButton link={linkTo} title={title}/>)
+                    data.nav.map(({id, linkTo, title}) => <NavButton key={id} link={linkTo} title={title}/>)
                 }
             </ul>
         </div>
