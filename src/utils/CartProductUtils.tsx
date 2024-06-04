@@ -2,7 +2,7 @@ import { KEY_LS_CART } from "@/config/keysLocalStorage"
 
 class CartProductUtils {
     static getCartProducts = () => {
-        const cartProductsStr = localStorage.getItem(KEY_LS_CART) ?? '';
+        const cartProductsStr = localStorage.getItem(KEY_LS_CART) ?? '[]';
         return JSON.parse(cartProductsStr) ?? []
     }
 
@@ -22,6 +22,14 @@ class CartProductUtils {
             each => each.id === product.id && each.color === product.color
         );
         return isInCart;
+    }
+
+    static getProductInCartById = (id) => {
+        const cartProducts = this.getCartProducts();
+        const product = cartProducts.find(
+            each => each.id === id
+        );
+        return product;
     }
 
     static getProductInCartByIdAndColor = (id, color) => {

@@ -2,23 +2,35 @@ import './styles.css'
 import plane from '/public/images/icon/plane.png'
 import truck from '/public/images/icon/truck.png'
 import { optionsLocaleString } from '@/config/appConfig'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { CartProductUtils } from '@/utils/CartProductUtils'
 
 const DetailCheckout = ({ product }) => {
+    const units = useRef<HTMLInputElement>(null);
     const [quantity, setQuantity] = useState(1);
-    const [toAddProduct, setButton] = useState(true);
-
-    let cartProducts = CartProductUtils.getCartProducts();
+    const [toAddProduct, setButtonToAddProduct] = useState(true);
+    
+    useEffect(() => {
+        const searchProduct = CartProductUtils.getProductInCartById(product.id)
+        if (searchProduct) {
+            setQuantity(searchProduct.units);
+            setButtonToAddProduct(false);
+        } else {
+            setQuantity(1);
+            setButtonToAddProduct(true);
+        }
+    }, [product]);
 
     const manageCart = () => {
-        const one = cartProducts.some(each => each.id === product.id);
-        if (!one) {
+        let cartProducts = CartProductUtils.getCartProducts();
+        const searchProduct = cartProducts.some(each => each.id === product.id);
+        if (!searchProduct) {
+            product.units = quantity;
             cartProducts.push(product);
-            setButton(true);
+            setButtonToAddProduct(false);
         } else {
             cartProducts = cartProducts.filter(each => each.id !== product.id);
-            setButton(false);
+            setButtonToAddProduct(true);
         }
         CartProductUtils.setCartProducts(cartProducts);
     };
@@ -40,7 +52,14 @@ const DetailCheckout = ({ product }) => {
             </ul>
             <div className="checkout-process">
                 <div className="top">
-                    <input id="quantity" type="number" min="1" max="10" defaultValue={quantity} data-id={product.id} onChange={(event) => setQuantity(Number(event?.target.value))} />
+                    <input 
+                        type="number"
+                        min="1"
+                        max="10"
+                        value={quantity}
+                        ref={units}
+                        onChange={() => setQuantity(Number(units.current?.value))}
+                    />
                     <button className="btn btn-primary">Comprar</button>
                 </div>
                 <div className="bottom">
