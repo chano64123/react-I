@@ -57,6 +57,7 @@ const DetailCheckout = ({ product }) => {
                         min="1"
                         max="10"
                         value={quantity}
+                        readOnly={!toAddProduct}
                         ref={units}
                         onChange={() => setQuantity(Number(units.current?.value))}
                     />
