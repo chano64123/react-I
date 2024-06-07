@@ -9,7 +9,7 @@ const OnSaleCard = ({ product }) => {
             <img src={images[0]} alt={title} className="product-image" />
             <div className="card-content">
                 <h2 className="title">{title}</h2>
-                <p className="original-price">Desde S/{price.toLocaleString('es-PE', optionsLocaleString)}</p>
+                <p className="original-price">Antes S/{price.toLocaleString('es-PE', optionsLocaleString)}</p>
                 <p className="discounted-price">S/{priceWithDiscount.toLocaleString('es-PE', optionsLocaleString)} <span className="discount">{discount}% OFF</span></p>
                 <span className="cta">¡Compra y paga en soles!</span>
             </div>
