@@ -10,6 +10,7 @@
             "description": "Space Gray",
             "price": 1500,
             "discount": 60,
+            "onSale": false,
             "observation": "Incluye impuesto País y percepción AFIP",
             "colors": [
                 "Rosa",
@@ -27,6 +28,7 @@
             "description": "Space Gray",
             "price": 2300,
             "discount": 60,
+            "onSale": true,
             "observation": "Incluye impuesto País y percepción AFIP",
             "colors": [
                 "Gris",
@@ -43,6 +45,7 @@
             "description": "Space Gray",
             "price": 1800,
             "discount": 60,
+            "onSale": false,
             "observation": "Incluye impuesto País y percepción AFIP",
             "colors": [
                 "Blanco",
@@ -60,6 +63,7 @@
             "description": "Space Gray",
             "price": 2500,
             "discount": 60,
+            "onSale": true,
             "observation": "Incluye impuesto País y percepción AFIP",
             "colors": [
                 "Morado",
@@ -76,6 +80,7 @@
             "description": "Space Gray",
             "price": 2199.99,
             "discount": 60,
+            "onSale": true,
             "observation": "Incluye impuesto País y percepción AFIP",
             "colors": [
                 "Guinda",
@@ -92,6 +97,7 @@
             "description": "Space Gray",
             "price": 3200.99,
             "discount": 60,
+            "onSale": true,
             "observation": "Incluye impuesto País y percepción AFIP",
             "colors": [
                 "Celeste",

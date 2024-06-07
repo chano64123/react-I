@@ -43,7 +43,7 @@
         {
             "id": 1,
             "title": "Ofertas",
-            "linkTo": "#"
+            "linkTo": "/onsale"
         },
         {
             "id": 2,
