@@ -6,12 +6,12 @@ import DetailThumbs from '@/components/DetailThumbs';
 import DetailDescription from '@/components/DetailDescription';
 import DetailCheckout from '@/components/DetailCheckout';
 import Hero from '@/components/Hero';
-import data from '@/data/products.json'
 import { useParams } from 'react-router-dom';
+import { ProductUtils } from '@/utils/ProductUtils';
 
 const Details = () => {
     const { id } = useParams();
-    const product = data.products.find(product => product.id === Number(id));
+    const product = ProductUtils.getProductById(id)
     return (
         <>
             <Header />

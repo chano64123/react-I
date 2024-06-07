@@ -1,10 +1,9 @@
 import './styles.css'
-import data from '@/data/products.json'
 import OnSaleCard from '../OnSaleCard';
-
+import { ProductUtils } from '@/utils/ProductUtils';
 
 const OnSaleList = () => {
-    const products = data.products.filter(product => product.onSale);
+    const products = ProductUtils.getOnSaleProducts();
     return (
         <main>
             <div className="container">

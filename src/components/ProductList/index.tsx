@@ -1,9 +1,9 @@
 import './styles.css'
-import data from '@/data/products.json'
 import ProductCard from '../ProductCard';
+import { ProductUtils } from '@/utils/ProductUtils';
 
 const ProductList = ({first = 0}) => {
-    const products = first === 0 ? data.products :  data.products.slice(0, first);
+    const products = ProductUtils.getFirstProducts(first);
     return (
         <main>
             <div className="container">
