@@ -8,7 +8,7 @@ const OnSale = () => {
     <>
       <Header showFilter={true} />
       <Hero first={"Nuestras"} second={"Ofertas"} />
-      <OnSaleList />
+      <OnSaleList pageSize={3} />
       <Footer />
     </>
   )
